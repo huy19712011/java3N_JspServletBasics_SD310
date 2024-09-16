@@ -38,6 +38,33 @@
 <p><%= com.example.java3n_jspservletbasics_sd310.FunUtils.makeItUpper("hi sd19310") %></p>
 <p><%= FunUtils.makeItUpper("hi sd19310") %></p>
 
+<%--5. Built-in Objects: out, request, response, session, cookie, param, ...--%>
+<p><%= request.getHeader("User-Agent") %></p>
+<p><%= request.getLocale() %></p>
+
+<%--6. Form--%>
+<%--7. dropdown, checkbox, radio, ...--%>
+<form action="student-response.jsp">
+    First name: <input type="text" name="firstName">
+    <br>
+    Last name: <input type="text" name="lastName">
+    <br>
+    <select name="country">
+        <option>Vietnam</option>
+        <option>Lao</option>
+        <option>Singapore</option>
+    </select>
+    <br>
+<%--    <input type="radio" name="favoriteLanguage" value="Java">Java--%>
+<%--    <input type="radio" name="favoriteLanguage" value="C#">C#--%>
+<%--    <input type="radio" name="favoriteLanguage" value="Javascript">Javascript--%>
+    <input type="checkbox" name="favoriteLanguage" value="Java">Java
+    <input type="checkbox" name="favoriteLanguage" value="C#">C#
+    <input type="checkbox" name="favoriteLanguage" value="Javascript">Javascript
+    <br>
+    <input type="submit" value="Submit">
+</form>
+
 <br/>
 <a href="hello-servlet">Hello Servlet</a>
 </body>
